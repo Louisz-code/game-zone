@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topo">
+
+        <a href="#" class="logo">
+            GAME <span>ZONE</span>
+        </a>
+
+        <nav class="menu" id="menuPrincipal">
+            <a href="#">Início</a>
+            <a href="#jogos">Jogos</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <div class="pesquisa">
+            <input
+                type="search"
+                id="campoPesquisa"
+                placeholder="Pesquisar jogos..."
+                aria-label="Pesquisar jogos"
+            >
+
+            <button
+                type="button"
+                id="botaoPesquisa"
+                aria-label="Pesquisar"
+            >🔍</button>
+        </div>
+
+        <button
+            type="button"
+            class="botao-menu"
+            id="botaoMenu"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menuPrincipal"
+        >☰</button>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner">
+
+            <div class="banner-conteudo">
+
+                <span class="banner-tag">
+                    🎮 SEU UNIVERSO GAMER
+                </span>
+
+                <h1>
+                    GAME <span>ZONE</span>
+                </h1>
+
+                <p>
+                    Descubra novos mundos, enfrente desafios
+                    e encontre os jogos que combinam com você.
+                </p>
+
+                <button
+                    type="button"
+                    class="botao-explorar"
+                    id="botaoExplorar"
+                >
+                    Explorar jogos
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categorias" id="categorias">
+
+            <div class="secao-titulo categorias-titulo">
+                <div>
+                    <span>ENCONTRE SEU ESTILO</span>
+                    <h2>Categorias</h2>
+                </div>
+
+                <p>Escolha um gênero para explorar</p>
+            </div>
+
+            <div class="lista-categorias">
+
+                <button type="button" class="categoria-btn ativo"
+                    data-categoria="todos">
+                    🎮 Todos
+                </button>
+
+                <button type="button" class="categoria-btn"
+                    data-categoria="RPG">
+                    🧙 RPG
+                </button>
+
+                <button type="button" class="categoria-btn"
+                    data-categoria="Ação">
+                    ⚔️ Ação
+                </button>
+
+                <button type="button" class="categoria-btn"
+                    data-categoria="Terror">
+                    👻 Terror
+                </button>
+
+                <button type="button" class="categoria-btn"
+                    data-categoria="Aventura">
+                    🗺️ Aventura
+                </button>
+
+                <button type="button" class="categoria-btn"
+                    data-categoria="Metroidvania">
+                    🏰 Metroidvania
+                </button>
+
+                <button type="button" class="categoria-btn"
+                    data-categoria="Drama">
+                    🎭 Drama
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOGOS -->
+        <section class="jogos" id="jogos">
+
+            <div class="secao-titulo">
+                <div>
+                    <span>EXPLORE NOSSA COLEÇÃO</span>
+                    <h2>Jogos em destaque</h2>
+                </div>
+
+                <p id="contadorJogos">6 jogos encontrados</p>
+            </div>
+
+            <div class="lista-jogos" id="listaJogos">
+
+                <!-- JOGO 1 -->
+                <article class="card-jogo"
+                    data-nome="Cyberpunk 2077"
+                    data-genero="RPG">
+
+                    <div class="imagem-jogo">
+                        <img src="img/jogo1.jpg" alt="Cyberpunk 2077">
+                        <span class="genero">RPG</span>
+                    </div>
+
+                    <div class="info-jogo">
+                        <h3>Cyberpunk 2077</h3>
+                        <p>
+                            Explore uma cidade futurista cheia de
+                            perigos, tecnologia e escolhas.
+                        </p>
+
+                        <button type="button" class="botao-detalhes"
+                            data-jogo="cyberpunk">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- JOGO 2 -->
+                <article class="card-jogo"
+                    data-nome="Red Dead Redemption 2"
+                    data-genero="Ação e Aventura">
+
+                    <div class="imagem-jogo">
+                        <img src="img/jogo2.jpg"
+                            alt="Red Dead Redemption 2">
+
+                        <span class="genero">Ação e Aventura</span>
+                    </div>
+
+                    <div class="info-jogo">
+                        <h3>Red Dead Redemption 2</h3>
+                        <p>
+                            Viva uma jornada pelo Velho Oeste em um
+                            mundo aberto cheio de aventuras e escolhas.
+                        </p>
+
+                        <button type="button" class="botao-detalhes"
+                            data-jogo="red-dead-redemption-2">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- JOGO 3 -->
+                <article class="card-jogo"
+                    data-nome="Resident Evil 4"
+                    data-genero="Terror e Ação">
+
+                    <div class="imagem-jogo">
+                        <img src="img/jogo3.jpg" alt="Resident Evil 4">
+                        <span class="genero">Terror e Ação</span>
+                    </div>
+
+                    <div class="info-jogo">
+                        <h3>Resident Evil 4</h3>
+                        <p>
+                            Enfrente criaturas aterrorizantes em uma
+                            missão perigosa cheia de ação e suspense.
+                        </p>
+
+                        <button type="button" class="botao-detalhes"
+                            data-jogo="resident-evil-4">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- JOGO 4 -->
+                <article class="card-jogo"
+                    data-nome="Hollow Knight"
+                    data-genero="Metroidvania">
+
+                    <div class="imagem-jogo">
+                        <img src="img/jogo4.jpg" alt="Hollow Knight">
+                        <span class="genero">Metroidvania</span>
+                    </div>
+
+                    <div class="info-jogo">
+                        <h3>Hollow Knight</h3>
+                        <p>
+                            Explore um reino misterioso repleto
+                            de criaturas, segredos e desafios.
+                        </p>
+
+                        <button type="button" class="botao-detalhes"
+                            data-jogo="hollow-knight">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- JOGO 5 -->
+                <article class="card-jogo"
+                    data-nome="The Last of Us"
+                    data-genero="Ação e Aventura">
+
+                    <div class="imagem-jogo">
+                        <img src="img/jogo5.jpg" alt="The Last of Us">
+                        <span class="genero">Ação e Aventura</span>
+                    </div>
+
+                    <div class="info-jogo">
+                        <h3>The Last of Us</h3>
+                        <p>
+                            Em um mundo devastado, Joel e Ellie enfrentam
+                            perigos enquanto atravessam os Estados Unidos.
+                        </p>
+
+                        <button type="button" class="botao-detalhes"
+                            data-jogo="the-last-of-us">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- JOGO 6 -->
+                <article class="card-jogo"
+                    data-nome="Detroit: Become Human"
+                    data-genero="Aventura e Drama">
+
+                    <div class="imagem-jogo">
+                        <img src="img/jogo6.jpg"
+                            alt="Detroit: Become Human">
+
+                        <span class="genero">Aventura e Drama</span>
+                    </div>
+
+                    <div class="info-jogo">
+                        <h3>Detroit: Become Human</h3>
+                        <p>
+                            Faça escolhas que podem mudar completamente
+                            o destino dos personagens e da história.
+                        </p>
+
+                        <button type="button" class="botao-detalhes"
+                            data-jogo="detroit-become-human">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- SEM RESULTADOS -->
+            <div class="sem-resultados" id="semResultados" hidden>
+                <h3>Nenhum jogo encontrado</h3>
+                <p>Tente pesquisar por outro nome ou gênero.</p>
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="sobre" id="sobre">
+
+            <div class="sobre-conteudo">
+
+                <span class="sobre-tag">🎮 SOBRE O GAME ZONE</span>
+
+                <h2>
+                    Seu universo <span>gamer</span>
+                </h2>
+
+                <p>
+                    O Game Zone é um catálogo criado para reunir
+                    diferentes estilos de jogos em um só lugar.
+                    Explore nossa coleção, pesquise seus jogos
+                    favoritos e descubra novas aventuras.
+                </p>
+
+                <p>
+                    O projeto foi desenvolvido com HTML, CSS e
+                    JavaScript, utilizando uma interface moderna,
+                    simples e responsiva.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+            <a href="#" class="logo">
+                GAME <span>ZONE</span>
+            </a>
+
+            <p>Seu universo gamer em um só lugar.</p>
+        </div>
+
+        <div class="rodape-linha"></div>
+
+        <p class="copyright">
+            © 2026 Game Zone. Projeto desenvolvido para fins educacionais.
+        </p>
+
+    </footer>
+
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button
+        type="button"
+        class="botao-topo"
+        id="botaoTopo"
+        aria-label="Voltar ao topo"
+    >↑</button>
+
+
+    <!-- MODAL DE DETALHES ATUALIZADO -->
+    <div class="modal" id="modalDetalhes" aria-hidden="true">
+
+        <div
+            class="modal-conteudo"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitulo"
+        >
+
+            <button
+                type="button"
+                class="fechar-modal"
+                id="fecharModal"
+                aria-label="Fechar detalhes"
+            >×</button>
+
+            <span class="modal-genero" id="modalGenero">RPG</span>
+
+            <h2 id="modalTitulo">Nome do jogo</h2>
+
+            <p id="modalDescricao">Descrição do jogo.</p>
+
+            <!-- GÊNERO E AVALIAÇÃO -->
+            <div class="modal-informacoes">
+
+                <div>
+                    <span>Gênero</span>
+                    <strong id="modalGeneroInfo">RPG</strong>
+                </div>
+
+                <div>
+                    <span>Avaliação</span>
+                    <strong id="modalAvaliacao">★ 9.0</strong>
+                </div>
+
+            </div>
+
+            <!-- INFORMAÇÕES ADICIONAIS -->
+            <div class="modal-informacoes modal-informacoes-extras">
+
+                <div>
+                    <span>Desenvolvedora</span>
+                    <strong id="modalDesenvolvedora">—</strong>
+                </div>
+
+                <div>
+                    <span>Lançamento</span>
+                    <strong id="modalAno">—</strong>
+                </div>
+
+                <div>
+                    <span>Plataformas</span>
+                    <strong id="modalPlataformas">—</strong>
+                </div>
+
+                <div>
+                    <span>Modo de jogo</span>
+                    <strong id="modalModo">—</strong>
+                </div>
+
+            </div>
+
+            <!-- DESTAQUES -->
+            <div class="modal-destaques">
+                <h3>Destaques do jogo</h3>
+                <p id="modalDestaques">—</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT EXTERNO -->
+    <script src="script.js"></script>
+
+</body>
+</html>
